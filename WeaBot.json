@@ -1,0 +1,439 @@
+{
+  "luis_schema_version": "1.3.1",
+  "versionId": "0.1",
+  "name": "WeaBot",
+  "desc": "",
+  "culture": "zh-cn",
+  "intents": [
+    {
+      "name": "greeting"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "weather"
+    }
+  ],
+  "entities": [
+    {
+      "name": "location"
+    },
+    {
+      "name": "weather"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "datetime",
+    "temperature"
+  ],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "下雪",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "下雨",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "天津明天可能会刮风",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 7,
+          "endPos": 8
+        },
+        {
+          "entity": "location",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "北京明天温度35°",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "西安周末天气很热",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 7
+        },
+        {
+          "entity": "location",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "雷阵雨",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "北京明天有雨",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "location",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "阵雨",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "起风",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "今天北京多云转阴吗",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 7
+        },
+        {
+          "entity": "location",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "明天北京是晴天吗",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 5,
+          "endPos": 6
+        },
+        {
+          "entity": "location",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "后天北京降温吗",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 5
+        },
+        {
+          "entity": "location",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "济南晴转多云",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 5
+        },
+        {
+          "entity": "location",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "北京今天多云转阴",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 7
+        },
+        {
+          "entity": "location",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "什么时候下雨",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "青岛明天阴转小雨",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "weather",
+          "startPos": 5,
+          "endPos": 7
+        },
+        {
+          "entity": "location",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "明天天气好不好",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "今天雾霾重不重",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "weather",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "后天有雾吗",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "今天有冰雹吗",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今天是大风天气",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今天三级大风",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "今天济南天气如何",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 5
+        },
+        {
+          "entity": "location",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "明天有暴雨吗",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "今天七级大风",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "北京今天最高温度是多少",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 6,
+          "endPos": 7
+        },
+        {
+          "entity": "location",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "今天有风吗",
+      "intent": "weather",
+      "entities": [
+        {
+          "entity": "weather",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "人呢",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "请问",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "在不",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "在吗",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "Hi",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "你好",
+      "intent": "greeting",
+      "entities": []
+    }
+  ]
+}
